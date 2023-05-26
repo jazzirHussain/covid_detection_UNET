@@ -69,23 +69,22 @@ if __name__ == "__main__":
         # result[y_pred > 0] = y_pred[y_pred > 0]
         mask_indices = np.any(y_pred, axis=2)
         result[mask_indices] = color
-        cv2.imwrite(save_image_path, result)
-        import matplotlib.pyplot as plt
+        cv2.imwrite(save_image_path, np.concatenate([ori_x, sep_line, ori_y, sep_line, result], axis=1))
+        # import matplotlib.pyplot as plt
 
-        plt.subplot(1, 3, 1)
-        plt.imshow(ori_x)
-        plt.title('Image 1')
+        # plt.subplot(1, 3, 1)
+        # plt.imshow(ori_x)
+        # plt.title('Image 1')
 
-        plt.subplot(1, 3, 2)
-        plt.imshow(y_pred)
-        plt.title('Image 2 (Mask)')
+        # plt.subplot(1, 3, 2)
+        # plt.imshow(ori_y)
+        # plt.title('Image 2 (Mask)')
 
-        plt.subplot(1, 3, 3)
-        plt.imshow(result)
-        plt.title('Result')
+        # plt.subplot(1, 3, 3)
+        # plt.imshow(result)
+        # plt.title('Result')
 
-        plt.show()
-        break
+        # plt.show()
 
 
 

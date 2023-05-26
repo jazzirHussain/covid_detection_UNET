@@ -56,3 +56,5 @@ for i in images:
   mask_indices = np.any(y_pred, axis=2)
   result[mask_indices] = color
   cv2.imwrite(save_image_path, result)
+  # sep_line = np.ones((256, 10, 3)) * 255
+  # cv2.imwrite(save_image_path, np.concatenate([ori_x, sep_line, ori_y, sep_line, result], axis=1))
