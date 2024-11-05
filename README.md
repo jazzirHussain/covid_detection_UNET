@@ -20,6 +20,20 @@ This project implements a **U-Net model** for detecting COVID-19 infections in l
 - **TensorFlow / Keras**: Used for building and training the U-Net model.
 - **OpenCV & NumPy**: For image preprocessing and data handling.
 
+## Images
+**Model Input**
+![Input_Image](sample_1.png)
+
+**Model Output**
+![Output_Image](output.jpg)
+
+**Architecture**
+![Architecture](architecture.png)
+
+**Interface**
+![Interface](interface_1.jpg)
+![Interface](interface_2.jpg)
+
 ## Installation
 
 1. Clone the repository:
