@@ -30,10 +30,13 @@ This project implements a **U-Net model** for detecting COVID-19 infections in l
 ![Output_Image](output.jpg)
 
 **Architecture**
+
 ![Architecture](architecture.png)
 
 **Interface**
+
 ![Interface](interface_1.jpg)
+
 ![Interface](interface_2.jpg)
 
 ## Installation
