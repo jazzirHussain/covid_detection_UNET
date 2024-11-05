@@ -22,9 +22,11 @@ This project implements a **U-Net model** for detecting COVID-19 infections in l
 
 ## Images
 **Model Input**
+
 ![Input_Image](sample_1.png)
 
 **Model Output**
+
 ![Output_Image](output.jpg)
 
 **Architecture**
